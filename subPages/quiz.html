@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <base href="https://drvtwprojektkatastrofa.on.drv.tw/www.projektkatastrofa.pl/" target="_self">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="icon" href="webImgs/Logo_square.png" />
+    <title>Proj. Katastrofa-Quiz</title>
+    <meta name="copyright" content="Copyright (c) Projekt Katastrofa 2023. All Rights Reserved." />
+    <meta property="og:title" content="Projekt Katastrofa" />
+    <meta property="og:description" content="Strona do projektu ZWZT, edukujemy o katastrofach nuklearnych oraz postępowaniu w razie ich wystąpienia." />
+    <meta property="og:image" content="webImgs/Logo_square.png" />
+</head>
+<body>
+    <!-- Ogolna klasa strony(poczatek) -->
+    <div id="Page">
+        <!-- Pasek na gorze strony -->
+        <header id="TopBar">
+            <!-- Przyciski -->
+            <nav id="TopBarBtns">
+                <img src="webImgs/Logo_rect.png" id="logo" />
+                <ul id="navigation">
+                    <li class="tbBtn"><a href="index.html" class="tbButton">Strona Główna</a></li>
+                    <li class="tbBtn"><a href="subPages/quiz.html" class="tbButton">Quiz</a></li>
+                    <li class="tbBtn"><a href="subPages/about.html" class="tbButton">O nas!</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1 id="theTitle">Quiz</h1>
+        <div id="info_wstp">
+            <p id="opis_strony">Witaj! Zachęcamy do spróbowania siebie w naszym quizie z wiedzy o bezpieczeństwu w zagrożeniu promieniowaniem jak i o promieniowaniu.</p>
+        </div>
+        <form action="" method="get">
+            <!-- GET DO PROSTSZYCH POST DO PLIKÓW -->
+            <p id="qHeading">Quiz</p>
+            <label>Nazwa Użytkownika <input type="text" name="username" maxlength="10" /></label><br />
+            <label>Hasło <input type="password" name="password" maxlength="30" /></label>
+            <p><textarea name="comments">Tu wpisz swój komentarz...</textarea>
+            <p>
+                Wybierz swój uluiony rodzaj muzyki:
+                <br />
+                <input id="rock" type="radio" name="genre" value="r" checked="checked" /> <label for="rock">Rock</label>
+                <input id="jazz" type="radio" name="genre" value="j" /> <label for="jazz">Jazz</label>
+                <input id="pop" type="radio" name="genre" value="p" /> <label for="pop">Pop</label>
+            </p>
+            <p>
+                Wybierz swoje ulubione platformy streamingowe:
+                <br />
+                <input id="youtube" type="checkbox" name="platform" value="y" /> <label for="youtube">YouTube</label>
+                <input id="twitch" type="checkbox" name="platform" value="t" /> <label for="twitch">Twitch</label>
+                <input id="kick" type="checkbox" name="platform" value="k" /> <label for="kick">Kick</label>
+            </p>
+            <p>
+                Jakiego urządzenia używasz do słuchania muzyki?
+                <br />
+                <select name="devices">
+                    <option value="ipod">iPoda</option>
+                    <option value="radio">Radia</option>
+                    <option value="telephon">Telefonu</option>
+                </select>
+            </p>
+            <p>
+                Prześlij swój avatar:
+                <br />
+                <input type="file" name="avatar" /><br />
+                <input type="submit" value="Prześlij" disabled="disabled" />
+            </p>
+            <p>
+                Subskrybuj nasz biuletyn:
+                <br />
+                <input type="text" name="email" /><br />
+                <input type="image" src="webImgs/Logo_square.png" width="70" disabled="disabled" /> <!-- DZIAŁA TAK SAMO JAK SUBMIT! -->
+            </p>
+            <button disabled="disabled">
+                <img src="zdjecie-przycisku" alt="add" title="zdjecie"/> <!-- DZIAŁA TAK SAMO JAK SUBMIT! -->
+            </button>
+
+            <!-- DO GRUPOWANIA DŁUŻSZYCH FORMULARZY -->
+            <fieldset>
+                <legend>Informaje kontaktowe</legend>
+                <label>
+                    Adres e-mail:<br />
+                    <input type="text" name="email" />
+                </label><br />
+                <label>
+                    Hasło<br />
+                    <input type="password" name="password" />
+                </label><br />
+                <label>
+                    Numer telefonu<br />
+                    <input type="number" name="number" />
+                </label>
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+</html>

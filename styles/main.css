@@ -1,0 +1,149 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../webImgs/radioactive-sign-bg.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: auto;
+}
+
+ul {
+    display: flex;
+    margin-block: 0;
+    padding: 0;
+}
+
+/* Main Page you can scroll */
+#Page {
+    position: relative;
+    margin: auto;
+    min-width: fit-content;
+    width: 64vw;
+    min-height: 85vh;
+    max-height: fit-content;
+    background-color: rgb(255 255 255 / 97%);
+    top: 0;
+}
+
+/* TOP-BAR CSS */
+#TopBar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255 255 255);
+    border-bottom: solid 0.0625em black;
+    border-top: solid 0.0625em black;
+    max-height: 4.95em;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 62.5em;
+}
+
+#TopBar #logo {
+    margin-left: auto;
+    border: solid 0.07em black;
+    border-radius: 2em;
+    margin-right: 1em;
+    width: 14em;
+    max-height: 4.95em;
+}
+
+#TopBarBtns {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border: solid 0.099em black;
+    border-radius: 0.75em;
+    max-height: 4.95em;
+}
+
+#TopBarBtns .tbBtn {
+    background-color: rgb(239 239 239);
+    display: flex;
+    text-align: center;
+    border-radius: 0.7em;
+}
+
+.tbButton {
+    padding: 1.8em;
+    align-self: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(34, 133, 120);
+    border: dashed 0.099em black;
+    border-radius: 0.75em;
+    max-height: 4.95em;
+    white-space: nowrap;
+}
+
+    .tbButton:hover {
+        border: dashed 0.099em yellow;
+        background-color: rgb(186, 186, 186)
+    }
+
+/* Under NAV */
+
+#theTitle {
+    text-shadow: -0.07em -0.06em 0.09em blueviolet;
+    text-align: center;
+    margin-bottom: 0.625em;
+    margin-top: 0;
+    padding-top: 3em;
+}
+
+/* Opis pod tytułem strony */
+#info_wstp {
+    margin: 0 1.25em;
+    width: 60em;
+    padding-bottom: 0.625em;
+    border-left: 0.0625em black dashed;
+    border-right: 0.0625em black dashed;
+    border-bottom: 0.0625em black dashed;
+    border-radius: 0 0 0.81em 0.81em; /* left-up, right-up, right-down, left-down */
+}
+
+#opis_strony {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-size: 1.03em;
+    margin: 0 auto;
+    width: inherit;
+    padding: 0 0 0.81em 0;
+    text-align: center;
+}
+
+/* List in about page */
+ul#wcyf {
+    margin-top: 0.3em;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+ul#wcyf li {
+    display: inline;
+}
+
+ul#wcyf li:before { /* adding the marker before each one */
+    content: "×";
+    margin-right: 0.31em;
+}
+
+/* About */
+#fields {
+    border: 1px black solid;
+    width: 24em;
+}
+
+.info_field {
+    display: block;
+    position: relative;
+    top: 1em;
+}
+
+.info_field:first-child {
+    top: 0;
+}
+
+.info_field:nth-child(2n+1) {
+    background-color: red;
+}
