@@ -15,7 +15,6 @@ ul {
 
 /* Main Page you can scroll */
 #Page {
-    position: relative;
     margin: auto;
     min-width: fit-content;
     width: 64vw;
