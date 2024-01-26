@@ -1,7 +1,10 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    background-color: green;
+    background-image: url(../webImgs/radioactive-sign-bg.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: auto;
 }
 
 ul {
