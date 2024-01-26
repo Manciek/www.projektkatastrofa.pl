@@ -130,11 +130,12 @@ ul#wcyf li:before { /* adding the marker before each one */
 
 /* About */
 .fields {
-    border: 1px black solid;
+    /*border: 1px black solid;*/
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     max-width: 62.5em;
+    margin-bottom: 2em;
 }
 
 .info_field {
