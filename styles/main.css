@@ -1,10 +1,7 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    background-image: url(../webImgs/radioactive-sign-bg.png);
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: auto;
+    background-color: green;
 }
 
 ul {
@@ -130,12 +127,11 @@ ul#wcyf li:before { /* adding the marker before each one */
 
 /* About */
 .fields {
-    /*border: 1px black solid;*/
+    border: 1px black solid;
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     max-width: 62.5em;
-    margin-bottom: 2em;
 }
 
 .info_field {
@@ -147,4 +143,24 @@ ul#wcyf li:before { /* adding the marker before each one */
 }
 .info_field:nth-child(2n+1){
     background-color: yellow;
+}
+
+#quiz {
+    margin: 0 auto;
+    padding-bottom: 2em;
+    width: 62em;
+}
+
+#qHeading{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.25em;
+}
+
+#q1, #q2, #q3, #q4, #q5, #q6, #q7{
+    font-weight:bold;
+}
+label{
+    font-weight: normal;
 }
