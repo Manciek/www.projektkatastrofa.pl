@@ -8,9 +8,11 @@
     <meta property="og:description" content="Strona do projektu ZWZT, edukujemy o katastrofach nuklearnych oraz postępowaniu w razie ich wystąpienia." />
     <meta property="og:image" content="/webImgs/banner.png" />
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
     <link rel="icon" href="/webImgs/Logo_square.png" />
     <title>Proj. Katastrofa-Quiz</title>
+    <script src="jscript/chk.js" defer></script>
+    <script src="jscript/chngColor.js"></script>
 </head>
 <body>
     <!-- Ogolna klasa strony(poczatek) -->
@@ -33,68 +35,60 @@
             <p id="opis_strony">Witaj! Zachęcamy do spróbowania siebie w naszym quizie z wiedzy o bezpieczeństwu w zagrożeniu promieniowaniem jak i o promieniowaniu.</p>
         </div>
         
-        <!-- <form action="" method="get">
-            <!-- GET DO PROSTSZYCH POST DO PLIKÓW -.->
-            <p id="qHeading">Quiz</p>
-            <label>Nazwa Użytkownika <input type="text" name="username" maxlength="10" /></label><br />
-            <label>Hasło <input type="password" name="password" maxlength="30" /></label>
-            <p><textarea name="comments">Tu wpisz swój komentarz...</textarea>
-            <p>
-                Wybierz swój uluiony rodzaj muzyki:
+        <form id="quiz">
+            <p id="qHeading">Wypełnij poniższy quiz i sprawdź swoją wiedzę!</p>
+            <p id="q1">
+                1. Kiedy zaczęto używać energię jądrową?
                 <br />
-                <input id="rock" type="radio" name="genre" value="r" checked="checked" /> <label for="rock">Rock</label>
-                <input id="jazz" type="radio" name="genre" value="j" /> <label for="jazz">Jazz</label>
-                <input id="pop" type="radio" name="genre" value="p" /> <label for="pop">Pop</label>
+                <input id="XVIII" type="radio" name="century" value="a" /> <label for="XVIII">w XVIII wieku.</label>
+                <input id="XX" type="radio" name="century" value="b" /> <label for="XX">w XX wieku.</label>
+                <input id="XIX" type="radio" name="century" value="c" /> <label for="XIX">w XIX wieku.</label>
             </p>
-            <p>
-                Wybierz swoje ulubione platformy streamingowe:
+            <p id="q2">
+                2. Podczas podziału atomu:
                 <br />
-                <input id="youtube" type="checkbox" name="platform" value="y" /> <label for="youtube">YouTube</label>
-                <input id="twitch" type="checkbox" name="platform" value="t" /> <label for="twitch">Twitch</label>
-                <input id="kick" type="checkbox" name="platform" value="k" /> <label for="kick">Kick</label>
+                <input id="CIEPLO" type="radio" name="atom" value="a" /> <label for="CIEPLO">wydziela się ciepło.</label>
+                <input id="NIC" type="radio" name="atom" value="b" /> <label for="NIC">nic się nie wydziela.</label>
+                <input id="TOPNIENIE" type="radio" name="atom" value="c" /> <label for="TOPNIENIE">topnieje on od środka.</label>
             </p>
-            <p>
-                Jakiego urządzenia używasz do słuchania muzyki?
+            <p id="q3">
+                3. Promieniowanie gamma to fala elektromagnetyczna:
                 <br />
-                <select name="devices">
-                    <option value="ipod">iPoda</option>
-                    <option value="radio">Radia</option>
-                    <option value="telephon">Telefonu</option>
-                </select>
+                <input id="DLUGA" type="radio" name="gamma" value="a" /> <label for="DLUGA">długa.</label>
+                <input id="SREDNIA" type="radio" name="gamma" value="b" /> <label for="SREDNIA">średnia.</label>
+                <input id="KROTKA" type="radio" name="gamma" value="c" /> <label for="KROTKA">krótka.</label>
             </p>
-            <p>
-                Prześlij swój avatar:
+            <p id="q4">
+                4. W którym roku doszło do awarii elektrowni atomowej (Chalk River) w Kanadzie w stanie Ontario?
                 <br />
-                <input type="file" name="avatar" /><br />
-                <input type="submit" value="Prześlij" disabled="disabled" />
+                <input id="1961" type="radio" name="ontario" value="a" /> <label for="1961">w 1961r.</label>
+                <input id="1952" type="radio" name="ontario" value="b" /> <label for="1952">w 1952r.</label>
+                <input id="1949" type="radio" name="ontario" value="c" /> <label for="1949">w 1949r.</label>
             </p>
-            <p>
-                Subskrybuj nasz biuletyn:
+            <p id="q5">
+                5. Awaria elektrowni jądrowej 11 marca 2011r. w Fukushimie była spowodowana:
                 <br />
-                <input type="text" name="email" /><br />
-                <input type="image" src="webImgs/Logo_square.png" width="70" disabled="disabled" /> <!-- DZIAŁA TAK SAMO JAK SUBMIT! -.->
+                <input id="KONSTRUKCJA" type="radio" name="fukushima" value="a" /> <label for="KONSTRUKCJA">błędną konstrukcją elektrowni.</label>
+                <input id="PRACOWNICY" type="radio" name="fukushima" value="b" /> <label for="PRACOWNICY">błędem pracowników.</label>
+                <input id="NATURA" type="radio" name="fukushima" value="c" /> <label for="NATURA">trzęsieniem ziemii i tsunami.</label>
             </p>
-            <button disabled="disabled">
-                <img src="zdjecie-przycisku" alt="add" title="zdjecie"/> <!-- DZIAŁA TAK SAMO JAK SUBMIT! -.->
-            </button>
+            <p id="q6">
+                6. Które(jedno) z poniższych zdań jest prawdziwe:
+                <br />
+                <input id="6A" type="radio" name="tf" value="a" /> <label for="6A">podczas wytwarzania energii jądrowej jest wytwarzany popiół potrzebujący utylizacji.</label><br />
+                <input id="6B" type="radio" name="tf" value="b" /> <label for="6B">wytwarzanie energii jądrowej nie przyczynia się do kwaśnych opadów/globalnego ocieplenia.</label><br />
+                <input id="6C" type="radio" name="tf" value="c" /> <label for="6C">reaktory na elektrowniach są włączane/wyłączane codziennie.</label>
+            </p>
+            <p id="q7">
+                7. Szansa na znaczną katastrofę na elektrowni jądrowej z reaktorami 3 generacji wynosi:
+                <br />
+                <input id="1:400 000 000" type="radio" name="chance" value="a" /> <label for="1:400 000 000">1:400 000 000.</label>
+                <input id="1:400 000" type="radio" name="chance" value="b" /> <label for="1:400 000">1:400 000.</label>
+                <input id="1:140 000 000" type="radio" name="chance" value="c" /> <label for="1:140 000 000">1:140 000 000.</label>
+            </p>
 
-            <!-- DO GRUPOWANIA DŁUŻSZYCH FORMULARZY -.->
-            <fieldset>
-                <legend>Informaje kontaktowe</legend>
-                <label>
-                    Adres e-mail:<br />
-                    <input type="text" name="email" />
-                </label><br />
-                <label>
-                    Hasło<br />
-                    <input type="password" name="password" />
-                </label><br />
-                <label>
-                    Numer telefonu<br />
-                    <input type="number" name="number" />
-                </label>
-            </fieldset>
-        </form> -->
+            <button type="button" onclick="checkAnswers()" id="check">Sprawdź wynik!</button>
+        </form>
 
     </div>
 </body>
