@@ -138,6 +138,7 @@ ul#wcyf li:before { /* adding the marker before each one */
 }
 
 .info_field {
+    width:29em;
     max-width: 29em;
 }
 
@@ -160,4 +161,16 @@ ul#wcyf li:before { /* adding the marker before each one */
 label{
     font-weight: normal;
 }
-
+#ppl{
+    display: inline-block;
+    margin-left: 1em;
+    min-width: 28em;
+}
+#gm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gmpng{
+    width: 2em;
+}
