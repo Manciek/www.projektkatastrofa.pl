@@ -141,13 +141,6 @@ ul#wcyf li:before { /* adding the marker before each one */
     max-width: 29em;
 }
 
-/*.info_field:nth-child(2n) {
-    background-color: red;
-}
-.info_field:nth-child(2n+1){
-    background-color: yellow;
-}*/
-
 #quiz {
     margin: 0 auto;
     padding-bottom: 2em;
@@ -168,16 +161,3 @@ label{
     font-weight: normal;
 }
 
-.ppl{
-    display: inline-block;
-    margin: 0 2em;
-}
-
-.gm{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.gmpng{
-    width: 2em;
-}
