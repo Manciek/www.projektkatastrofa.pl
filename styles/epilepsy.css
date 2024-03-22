@@ -1,0 +1,64 @@
+
+body{
+    background-color: black;
+    margin: -5px;
+    padding: 0;
+}
+table{
+    border: 1px solid black;
+    width: 1920px;
+    height:1080px;
+    padding: 0;
+    margin: 0;
+}
+
+tr {
+    border: 1px solid black;
+}
+td{
+    border: 1px solid black;
+}
+
+
+tr:nth-child(3n+1) td:nth-child(3n+1) {
+    background-color: red;
+}
+tr:nth-child(3n+1) td:nth-child(3n+2) {
+    background-color: green;
+}
+tr:nth-child(3n+1) td:nth-child(3n) {
+    background-color: blue;
+}
+
+
+tr:nth-child(3n+2) td:nth-child(3n+2) {
+    background-color: red;
+}
+tr:nth-child(3n+2) td:nth-child(3n) {
+    background-color: green;
+}
+tr:nth-child(3n+2) td:nth-child(3n+1) {
+    background-color: blue;
+}
+
+tr:nth-child(3n) td:nth-child(3n) {
+    background-color: red;
+}
+tr:nth-child(3n) td:nth-child(3n+1) {
+    background-color: green;
+}
+tr:nth-child(3n) td:nth-child(3n+2) {
+    background-color: blue;
+}
+
+#btn{
+    position: absolute;
+    right: 50%;
+    background-color: black;
+    color: white;
+}
+
+#btn:hover{
+    background-color:white;
+    color:black;
+}
