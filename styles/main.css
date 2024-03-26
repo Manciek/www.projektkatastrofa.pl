@@ -177,3 +177,10 @@ label{
 legend{
     font-weight: bold;
 }
+#logos{
+    display:flex;
+    justify-content: space-evenly;
+}
+#mini {
+    width: 96px;
+}
