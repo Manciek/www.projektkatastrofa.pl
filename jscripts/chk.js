@@ -1,3 +1,4 @@
+const miejsca = ['czarnobyl', 'fukushima', 'majak', 'sellafield', 'kyshtym', 'tokaimura', 'windscale', 'chalk river']
 function checkAnswers() {
     // Get answers:
     var a1 = document.querySelector('input[name="century"]:checked')?.value ?? 'd';
@@ -7,8 +8,13 @@ function checkAnswers() {
     var a5 = document.querySelector('input[name="fukushima"]:checked')?.value ?? 'd';
     var a6 = document.querySelector('input[name="tf"]:checked')?.value ?? 'd';
     var a7 = document.querySelector('input[name="chance"]:checked')?.value ?? 'd';
+    // New
+    var a8d = document.querySelector('input[name="katasname"]')?.value ?? 'd';
+    var a8 = a8d.toLowerCase();
+    var a9 = document.querySelector('input[name="naped"]:checked')?.value ?? 'd';
 
-    var allAnswers = 7;
+
+    var allAnswers = 9;
     var correct = 0;
 
     if (a1 === 'b') {
@@ -32,6 +38,12 @@ function checkAnswers() {
     if (a7 === 'a') {
         correct++;
     }
+    if (miejsca.includes(a8)) {
+        correct++;
+    }
+    if (a9 === 'c') {
+        correct++;
+     }
 
     var percentValue = ((correct / allAnswers) * 100).toFixed(1);
     alert('You got: ' + percentValue + '%!')
