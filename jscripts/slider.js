@@ -1,4 +1,4 @@
-let images = ['./imgs/1.webp', './imgs/2.webp', './imgs/3.webp']
+let images = ['./webImgs/default.png']
 
 var img = document.getElementById("img");
 var imgCounter = document.getElementById("imgCounter");
@@ -30,5 +30,6 @@ function changeCounter(current, integer) {
     }
     return current;
 }
-//Update the counter on start
+//Update the on start
 imgCounter.textContent = currentImg + 1 + "/" + images.length;
+img.src = images[currentImg]
