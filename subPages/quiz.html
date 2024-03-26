@@ -34,7 +34,7 @@
         <div id="info_wstp">
             <p id="opis_strony">Witaj! Zachęcamy do spróbowania siebie w naszym quizie z wiedzy o bezpieczeństwu w zagrożeniu promieniowaniem jak i o promieniowaniu.</p>
         </div>
-        
+
         <form id="quiz">
             <p id="qHeading">Wypełnij poniższy quiz i sprawdź swoją wiedzę!</p>
             <p id="q1">
@@ -73,7 +73,7 @@
                 <input id="NATURA" type="radio" name="fukushima" value="c" /> <label for="NATURA">trzęsieniem ziemii i tsunami.</label>
             </p>
             <p id="q6">
-                6. Które(jedno) z poniższych zdań jest prawdziwe:
+                6. Które(jedno) z poniższych zdań jest prawdziwe?
                 <br />
                 <input id="6A" type="radio" name="tf" value="a" /> <label for="6A">podczas wytwarzania energii jądrowej jest wytwarzany popiół potrzebujący utylizacji.</label><br />
                 <input id="6B" type="radio" name="tf" value="b" /> <label for="6B">wytwarzanie energii jądrowej nie przyczynia się do kwaśnych opadów/globalnego ocieplenia.</label><br />
@@ -85,10 +85,47 @@
                 <input id="1:400 000 000" type="radio" name="chance" value="a" /> <label for="1:400 000 000">1:400 000 000.</label>
                 <input id="1:400 000" type="radio" name="chance" value="b" /> <label for="1:400 000">1:400 000.</label>
                 <input id="1:140 000 000" type="radio" name="chance" value="c" /> <label for="1:140 000 000">1:140 000 000.</label>
+            </p><!-- nowe -->
+            <p id="q8">
+                8. Miejsce jednej z katastrof nuklearnych:
+                <br />
+                <label for="katastrofa">ODP:</label><input id="katastrofa" type="text" name="katasname" value="np. 'Lubin'" />
+            </p>
+            <p id="q9">
+                9. Czym są napędzane elektrownie jądrowe?
+                <br />
+                <input id="paliwo" type="radio" name="naped" value="a" /> <label for="paliwo">paliwem.</label>
+                <input id="wiatr" type="radio" name="naped" value="b" /> <label for="wiatr">wiatrem.</label>
+                <input id="para" type="radio" name="naped" value="c" /> <label for="para">parą wodną.</label>
+            </p>
+            <p id="q10">
+                10. Jakie znaczie rodzaje elektrowni?
+                <br />
+            </p>
+            <p id="q11">
+                11. Z czego składa się atom?
+                <!-- Odp:z jądra atomowego (protony i neutrony) i elektronów krążących wokół jądra -->
+                <br />
+            </p>
+            <p id="q12">
+                12. Gdzie lepiej budować elektrownię jądrową?
+                <!-- Nad jakimś zbiornikiem wodnym , morzem , rzeką itp. -->
+                <br />
+            </p>
+            <p id="q13">
+                13. Jakie są zalety elektrowni atomowych?
+                <!--  Jest bezpieczna dla środowiska, nie potrzebuje surowców energetycznych, jest tańsza : -->
+                <br />
             </p>
 
             <button type="button" onclick="checkAnswers()" id="check">Sprawdź wynik!</button>
         </form>
+
+        <script>
+            document.getElementById("quiz").addEventListener("submit", function (event) {
+                event.preventDefault();
+            });
+        </script><!-- Disables Submitting the Form -->
 
     </div>
 </body>
