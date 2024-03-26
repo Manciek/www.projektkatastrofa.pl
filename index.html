@@ -29,7 +29,17 @@
 
         <h1 id="theTitle">Strona Główna</h1>
         <div id="info_wstp">
-            <p id="opis_strony">Witaj na stronie głównej! Poniżej będą zamieszczane informacje z odbytych zajęć,  zdjęcia z nich oraz gdzie następnie się udamy.</p>
+            <p id="opis_strony">Witaj na stronie głównej! Poniżej będą na bieżąco zamieszczane zdjęcia z odbytych zajęć!</p>
+            <div id="slider">
+                <div id="imgBox">
+                    <div id="imgCounter"></div>
+                    <img src="imgs/1.webp" alt="an Image" id="img" />
+                </div>
+                <button class="arrow" id="leftArrow" onclick="imgLeft()"><img src="imgs/leftArrow.webp" /></button>
+                <button class="arrow" id="rightArrow" onclick="imgRight()"><img src="imgs/rightArrow.webp" /></button>
+            </div>
+
+            <script src="jscript/slider.js"></script> <!-- Launch script -->
         </div>
     </div><!-- Page ends there -->
 </body>
