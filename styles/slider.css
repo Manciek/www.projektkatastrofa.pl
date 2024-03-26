@@ -1,0 +1,60 @@
+#slider {
+    background-color: rgba(0, 0, 0, 0.79);
+    position: relative;
+    border-radius: 2em;
+}
+
+#imgBox {
+    margin: auto;
+    width: 720px;
+    height: 480px;
+    max-width: 720px;
+    max-height: 480px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+#imgCounter {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    font-size: 16px;
+    padding:  0 3px;
+    border: 1px yellow solid;
+    border-radius: 0.5em;
+    color: rgb(42, 156, 57);
+    font-weight: bold;
+}
+
+#img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    background: none;
+    border: none;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow img {
+    width: 64px;
+    height: 64px; 
+}
+
+#leftArrow {
+    left: 0;
+}
+
+#rightArrow {
+    right: 0;
+}
+
+
