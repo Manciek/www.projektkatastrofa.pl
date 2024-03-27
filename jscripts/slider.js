@@ -1,4 +1,4 @@
-let images = ['./webImgs/1', './webImgs/2', './webImgs/3']
+let images = ['./webImgs/1.png', './webImgs/2.png', './webImgs/3.png']
 
 var img = document.getElementById("img");
 var imgCounter = document.getElementById("imgCounter");
