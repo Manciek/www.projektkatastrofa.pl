@@ -99,7 +99,7 @@ ul {
     border-right: 0.0625em black dashed;
     border-bottom: 0.0625em black dashed;
     border-radius: 0 0 0.81em 0.81em; /* left-up, right-up, right-down, left-down */
-    margin-bottom: 1.5em;
+    margin-bottom: 0.6em;
 }
 
 #opis_strony {
