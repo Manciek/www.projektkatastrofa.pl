@@ -5,6 +5,8 @@
 }
 
 #imgBox {
+    display: flex;
+    justify-content: center;
     margin: auto;
     width: 720px;
     height: 480px;
