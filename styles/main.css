@@ -184,3 +184,35 @@ legend{
 #mini {
     width: 96px;
 }
+#sponsors {
+    width: 62em;
+    height: 17em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+#tit {
+    text-shadow: -0.07em -0.06em 0.09em #bfe22b;
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    height: fit-content;
+}
+#box {
+    max-width: fit-content;
+    max-height: fit-content;
+    display: flex;
+    align-items: center;
+    background-color: rgb(39 39 39 / 70%);
+    border-top-left-radius: 1em 0.5em;
+    border-top-right-radius: 1em 0.5em;
+    border-bottom-left-radius: 1em 2em;
+    border-bottom-right-radius: 1em 2em;
+}
+#logo_sponsor {
+    width: 20em;
+    padding: 0.45em 0.45em;
+    max-height: 20em;
+}
