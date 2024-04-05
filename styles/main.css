@@ -17,7 +17,7 @@ ul {
 #Page {
     margin: auto;
     min-width: fit-content;
-    width: 64vw;
+    max-width: fit-content;
     min-height: 85vh;
     max-height: fit-content;
     background-color: rgb(255 255 255 / 97%);
