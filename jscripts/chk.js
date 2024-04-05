@@ -1,4 +1,4 @@
-const miejsca = ['czarnobyl', 'fukushima', 'majak', 'sellafield', 'kyshtym', 'tokaimura', 'windscale', 'chalk river']
+const miejsca = ['czarnobyl', 'fukushima', 'majak', 'sellafield', 'kyshtym', 'tokaimura', 'windscale', 'chalk river', 'lubin', 'język polski']
 function checkAnswers() {
     // Get answers:
     var a1 = document.querySelector('input[name="century"]:checked')?.value ?? 'd';
