@@ -1,4 +1,24 @@
-let images = ['./webImgs/1.jpg', './webImgs/2.jpg', './webImgs/3.jpg', './webImgs/4.jpeg', './webImgs/5.jpeg', './webImgs/6.jpeg', './webImgs/7.jpeg', './webImgs/8.jpeg', './webImgs/9.jpeg', './webImgs/10.jpeg', './webImgs/11.jpeg', './webImgs/12.jpeg', './webImgs/13.jpeg', './webImgs/14.jpeg', './webImgs/15.jpeg'];
+let images = [
+    './webImgs/16.jpeg',
+    './webImgs/17.jpeg',
+    './webImgs/18.jpeg',
+    './webImgs/19.jpeg',
+    './webImgs/20.jpeg',
+    './webImgs/21.jpeg',
+    './webImgs/22.jpeg',
+    './webImgs/24.jpeg',
+    './webImgs/1.jpg',
+    './webImgs/2.jpg',
+    './webImgs/3.jpg',
+    './webImgs/4.jpeg',
+    './webImgs/5.jpeg',
+    './webImgs/6.jpeg',
+    './webImgs/7.jpeg',
+    './webImgs/9.jpeg',
+    './webImgs/11.jpeg',
+    './webImgs/12.jpeg',
+    './webImgs/15.jpeg'
+];
 
 var img = document.getElementById("img");
 var imgCounter = document.getElementById("imgCounter");
