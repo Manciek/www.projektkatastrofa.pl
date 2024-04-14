@@ -1,4 +1,10 @@
 let images = [
+    './webImgs/25.jpg'
+    './webImgs/26.jpg'
+    './webImgs/27.jpg'
+    './webImgs/28.jpg'
+    './webImgs/29.jpg'
+    './webImgs/30.jpg'
     './webImgs/16.jpg',
     './webImgs/17.jpg',
     './webImgs/18.jpg',
