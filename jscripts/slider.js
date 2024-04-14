@@ -3,6 +3,7 @@ let images = [
     './webImgs/26.jpg'
     './webImgs/27.jpg'
     './webImgs/28.jpg'
+    './webImgs/23.jpg'
     './webImgs/29.jpg'
     './webImgs/30.jpg'
     './webImgs/16.jpg',
