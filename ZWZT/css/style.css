@@ -1,0 +1,95 @@
+﻿:root {
+    color-scheme: light dark;
+    --background-color-light: rgb(232, 232, 232);
+    --background-color-dark: rgb(20, 20, 20);
+    --bg-color-light: rgb(128, 128, 128);
+    --bg-color-dark: rgb(128, 128, 128);
+    --color-shadow-light: rgb(26, 26, 26);
+    --color-shadow-dark: rgb(101, 101, 101);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: var(--background-color-light);
+        --bg-color: var(--bg-color-light);
+        --color-shadow: var(--color-shadow-light);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: var(--background-color-dark);
+        --bg-color: var(--bg-color-dark);
+        --color-shadow: var(--color-shadow-dark);
+    }
+}
+
+/* Media Queries for diff devices */
+
+/* Phones */
+@media only screen and (max-width: 600px) {
+    main {
+        height: 23vw;
+    }
+    #logo {
+        padding-inline: 0.6em;
+        font-size: 6.5vw;   
+        word-spacing: 5px;
+        letter-spacing: 3px;
+    }
+    .scrolled main{
+        height: 10vw;
+        #logo{
+            font-size: 3vw;
+            margin-right: 74%;
+            box-shadow: -4px 4px 6px 1px var(--color-shadow), 
+        3px -3px 9px 1px #bababa;
+        }
+    }
+}
+/* PCs */
+@media only screen and (min-width: 600px) {
+    main {
+        height: 10vw;
+    }
+    #logo {
+        font-size: 5vw;
+        word-spacing: 10px;
+        letter-spacing: 7px;
+        padding-inline: 1em;
+    }
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+main {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--bg-color);
+    transition: all 0.3s ease;
+}
+
+#logo {
+    margin: 0;
+    font-family: cursive;
+    box-shadow: -6px 6px 6px 2px var(--color-shadow), 
+        5px -5px 9px 1px #bababa;
+    border-radius: 10px;
+}
+
+#web_body {
+    height: 58em;
+    border: 1px ridge;
+    border-radius: 10px;
+    background-color: rgb(33 49 146 / 93%);
+}
